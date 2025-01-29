@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Stats</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Stats</h1>
+
+        <!-- Total Expenses -->
+        <div id="total-expenses">
+            <h3>Total Expenses: $<span id="total-amount">0</span></h3>
+        </div>
+
+        <!-- Category-wise Breakdown Chart -->
+        <h4>Category-wise Breakdown</h4>
+        <canvas id="expense-chart"></canvas>
+
+        <!-- Link back to the input page -->
+        <div id="back-link">
+            <a href="index.html" class="back-link">Back to Add Expenses</a>
+        </div>
+    </div>
+
+    <script src="stats.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Form to Add New Expense -->
+        <form id="expense-form" class="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required>
+            <input type="date" id="expense-date" required>
+            <select id="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit" class="submit-button">Add Expense</button>
+        </form>
+
+        <!-- Expense List Display -->
+        <h3>Added Expenses</h3>
+        <ul id="expense-list" class="expense-list"></ul>
+
+        <!-- Button to View Stats Page -->
+        <div id="view-stats">
+            <a href="stats.html" id="view-stats-button" class="view-button">View Total and Graph</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

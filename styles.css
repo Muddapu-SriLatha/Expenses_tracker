@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(b8.jpg);
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color for better readability */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for contrast */
+    border-radius: 8px; /* Rounded corners */
+    backdrop-filter: blur(5px); /* Adds a slight blur to the background for a glass effect */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    color: #333;
+}
+
+#expense-chart {
+    width: 50% !important; /* Adjust the width of the chart */
+    height: 500px !important; /* Adjust the height of the chart */
+    margin: 0 auto;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.expense-form input, .expense-form select, .expense-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.expense-item {
+    background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background for list items */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.view-button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.view-button:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Transparent table with semi-transparent rows */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333; /* Ensure readability */
+}
+
+th {
+    background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent blue for headers */
+    color: white;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for cells */
+}
+
+table tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Highlight row on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #expense-chart {
+        width: 100% !important; /* Adjust the width for smaller screens */
+        height: 300px !important;
+    }
+}
